@@ -184,14 +184,15 @@ Validates the actual file content.
 ```bash
 # Clone the repository
 git clone <repository-url>
-cd university_portal
+cd ./Deparment Level File Sharing Platform
+
 
 # Create virtual environment
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 
 # Install dependencies
-pip install django
+pip install -r ./requirements.txt
 
 # Run migrations
 python manage.py makemigrations
@@ -202,3 +203,4 @@ python manage.py createsuperuser
 
 # Run server
 python manage.py runserver
+
