@@ -73,7 +73,10 @@ body {
     height: fit-content;
 
 }
-
+#main{
+    padding: 0;
+    margin:0;
+}
 
 #banner_area-c1{
     padding-left: 4%;
@@ -215,7 +218,7 @@ body {
 /* Footer Starts */
 /* Footer Ends */
 .back{
-    background-color: rgb(255, 225, 198);
+    background-color: #fff6ed;
 }
 .feature_img{
   display: flex;
