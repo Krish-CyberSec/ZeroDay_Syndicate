@@ -1,61 +1,83 @@
-{% extends "base.html" %}
-{% load static %}
-
-{% block title %}
-  AcadSecure - Home
-{% endblock %}
-
+{% extends "base.html" %} {% load static %} {% block title %} AcadSecure - Home
+{% endblock %} 
 {% block content %}
 
-  <div class="container-fluid">
-        <div class="row banner_area " >
-          <div
-            class="col-lg-6 col-md-12 col-sm-12 banner_area-c pt-lg-4"
-            id="banner_area-c1"
-          >
-            <section id="b_a-c1_s1" >
-              <h4>Welcome to the AcadSecure community</h4>  
-            </section>
-            <section id="b_a-c1_s2">
-              <p>
-                The place to get support, ask and answer questions and contribute to the open source learning platform, AcadSecure LMS.
-              </p>
-            </section>
+<div class="container-fluid">
 
-            <section id="b_a-c1_s3">
-              <a href="about-us/"><button>About US</button></a>
-              <a href="https://github.com/Krish-CyberSec/ZeroDay_Syndicate"><button >GitHub</button></a>
-            </section>
+  {% comment %} banner created by krish {% endcomment %}
+  <div class="row banner_area">
+    <div
+      class="col-lg-6 col-md-12 col-sm-12 banner_area-c pt-lg-4"
+      id="banner_area-c1"
+    >
+      <section id="b_a-c1_s1">
+        <h4>Welcome to the AcadSecure community</h4>
+      </section>
+      <section id="b_a-c1_s2">
+        <p>
+          The place to get support, ask and answer questions and contribute to
+          the open source learning platform, AcadSecure LMS.
+        </p>
+      </section>
 
-            <section id="b_a-c1_s4">
-              <div class="circles" id="circle1"></div>
-              <div class="circles" id="circle2"></div>
-              <div class="circles" id="circle3"></div>
-              <div class="circles" id="circle4"></div>
-              <div id="circles_side">
-                <p>Happy Students</p>
-              </div>
-            </section>
-          </div>
-          <div
-            class="col-lg-6 col-md-12 col-sm-12 banner_area-c pt-lg-4"
-            id="banner_area-c2"
-          >
+      <section id="b_a-c1_s3">
+        <a href="{% url 'about' %}"><button>About US</button></a>
+        <a href="https://github.com/Krish-CyberSec/ZeroDay_Syndicate"
+          ><button>GitHub</button></a
+        >
+      </section>
 
-              <div class="b_c2-img_circles" id="b_c2-img_cir1"></div>
-              <div class="b_c2-img_circles" id="b_c2-img_cir2"></div>
-
-            <section id="b_a-c2_s1">
-              <h4>Images Area</h4>
-            </section>
-
-          </div>
+      <section id="b_a-c1_s4">
+        <div class="circles" id="circle1"></div>
+        <div class="circles" id="circle2"></div>
+        <div class="circles" id="circle3"></div>
+        <div class="circles" id="circle4"></div>
+        <div id="circles_side">
+          <p>Happy Students</p>
         </div>
-      </div>
-      
-{% endblock %}
+      </section>
+    </div>
+    <div
+      class="col-lg-6 col-md-12 col-sm-12 banner_area-c pt-lg-4"
+      id="banner_area-c2"
+    >
+      <div class="b_c2-img_circles" id="b_c2-img_cir1"></div>
+      <div class="b_c2-img_circles" id="b_c2-img_cir2"></div>
+      <div class="b_c2-img_circles" id="b_c2-img_cir3"></div>
+      <div class="b_c2-img_circles" id="b_c2-img_cir4"></div>
 
 
-{% block footer %}
+      <section id="b_c2-img">
+        <div class="row g-3 justify-content-center">
+          <div
+            class="b_c2-img-c col-6 col-md-4 col-lg-6 me-5"
+            id="b_c2-img-c1"
+          ></div>
+          <div
+            class="b_c2-img-c col-6 col-md-4 col-lg-6"
+            id="b_c2-img-c2"
+          ></div>
+          <div
+            class="b_c2-img-c col-6 col-md-4 col-lg-6 me-5 "
+            id="b_c2-img-c3"
+          ></div>
+          <div
+            class="b_c2-img-c col-6 col-md-4 col-lg-6"
+            id="b_c2-img-c4"
+          ></div>
+        </div>
+      </section>
 
-{% endblock %}
+
+
+
+      {% comment %}
+      <section id="b_a-c2_s1">
+        <h4>Images Area</h4>
+      </section>
+      {% endcomment %}
+    </div>
+  </div>
+</div>
+
+{% endblock %} {% block footer %} {% endblock %}
