@@ -8,6 +8,8 @@ html {
 
 body {
   font-size: clamp(1rem, 2.2vw, 1.125rem);
+  overflow-x: hidden;
+
 }
 /* Media Query starts */
 @media (min-width: 992px) {
@@ -204,22 +206,42 @@ body {
     font-size: 16px;
 }
 #banner_area-c2{
-    background-color: yellow;
+    /* background-color: yellow; */
     position: relative;
 }
 
 .b_c2-img_circles{
-    width: 200px;
-    height: 200px;
+    width: 20%;
+    aspect-ratio: 1/1;
     border-radius: 50%;
     position: absolute;
     z-index: 0;
     background-color: #ebab5c;
 }
 
+#b_c2-img_cir2{
+    right: 14%;
+    width: 16%;
+    top: 3%;
+}
+
+#b_c2-img_cir3{
+    bottom: 45%;
+    left: 47%;
+    width: 4%;
+    background-color: darkorange;
+}
+
+#b_c2-img_cir4{
+    right: 11%;
+    bottom: -3%;
+    background-color: #e9844c;
+    width: 10%;
+}
+
 .b_c2-img-c{
-    height: 300px;
-    width: 300px;
+    width: 34%;
+    aspect-ratio: 1/1;
     z-index: 1;
     position: relative;
     
@@ -254,6 +276,8 @@ body {
     background-size: cover;
     border-radius: 8% 25% 12% 45%;
 }
+
+
 
 /* Main Ends */
 
