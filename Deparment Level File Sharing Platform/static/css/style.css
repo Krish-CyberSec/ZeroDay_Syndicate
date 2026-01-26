@@ -214,14 +214,3 @@ body {
 
 /* Footer Starts */
 /* Footer Ends */
-.back{
-    background-color: rgb(255, 225, 198);
-}
-.feature_img{
-  display: flex;
-  width: 60px;
-  height: auto;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-}
