@@ -22,6 +22,7 @@ body {
 
 #nav{
     padding: 1% 4% 0.5% 4%;
+    background-color: #fff;
 }
 
 .navbar-brand {
@@ -66,7 +67,10 @@ body {
 /* Header Ends */
 
 /* Main Starts */
+.banner_area{
+    margin-top: 9vh;
 
+}
 .banner_area-c{
     height: fit-content;
 
@@ -199,12 +203,58 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16px;
 }
-/* #banner_area-c1{
-    background-color: green;
-} */
 #banner_area-c2{
     background-color: yellow;
+    position: relative;
 }
+
+.b_c2-img_circles{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+    background-color: #ebab5c;
+}
+
+.b_c2-img-c{
+    height: 300px;
+    width: 300px;
+    z-index: 1;
+    position: relative;
+    
+}
+#b_c2-img-c1{
+    background:url("/static/images/b2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    
+}
+#b_c2-img-c2{
+    background:url("/static/images/b1.png") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 50% 50% 0 0;
+
+}
+#b_c2-img-c3{
+    background:url("/static/images/b3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#b_c2-img-c4{
+    background:url("/static/images/b4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8% 25% 12% 45%;
+}
+
 /* Main Ends */
 
 /* Footer Starts */
