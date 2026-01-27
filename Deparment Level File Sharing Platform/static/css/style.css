@@ -69,6 +69,10 @@ body {
 /* Header Ends */
 
 /* Main Starts */
+#main_content{
+    margin: 0;
+    padding: 0;
+}
 .banner_area{
     margin-top: 9vh;
 
@@ -277,7 +281,18 @@ body {
     border-radius: 8% 25% 12% 45%;
 }
 
-
+/* css for feature_tab */
+.back{
+    background-color: #fff6ed;
+}
+.feature_img{
+  display: flex;
+  width: 60px;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
 
 /* Main Ends */
 

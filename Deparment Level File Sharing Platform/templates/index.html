@@ -2,7 +2,7 @@
 {% endblock %} 
 {% block content %}
 
-<div class="container-fluid">
+<div class="container-fluid " id="main_content">
 
   {% comment %} banner created by krish {% endcomment %}
   <div class="row banner_area">
@@ -78,6 +78,51 @@
       {% endcomment %}
     </div>
   </div>
+
+
+  {% comment %} Adding feature tab by Navya {% endcomment %}
+  <section class="py-5 my-5 back">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md-4">
+                    <div class="p-4 h-100">
+                        <div class="icon-box mb-3">
+                            <img class="feature_img" src="https://uploads-ssl.webflow.com/63201b51f3e2d01beecbb8b7/6346a1832ef5c8ff96c689fc_ic-f1.png">
+                        </div>
+                        <h5 class="fw-bold">Learn from anywhere</h5>
+                        <p class="text-muted">
+                            Ecolabs’s online learning platform empowers you to learn new skills and accomplish real
+                            growth.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 h-100">
+                        <div class="icon-box mb-3">
+                            <img class="feature_img" src="https://uploads-ssl.webflow.com/63201b51f3e2d01beecbb8b7/63469556eabc886ebaaa81ae_ic-f2.png">
+                        </div>
+                        <h5 class="fw-bold">Courses taught by real-world experts</h5>
+                        <p class="text-muted">
+                            Our teachers are experts excited to share their wisdom, experience, & trusted tools with
+                            you.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 h-100">
+                        <div class="icon-box mb-3">
+                            <img class="feature_img" src="https://uploads-ssl.webflow.com/63201b51f3e2d01beecbb8b7/6346a1b8ba474e3fe177b111_ic-f3.png">
+                        </div>
+                        <h5 class="fw-bold">Learn in-demand skills</h5>
+                        <p class="text-muted">
+                            Explore demanded skills, deepen existing passions, and get lost in creativity.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </div>
 
 {% endblock %} {% block footer %} {% endblock %}
