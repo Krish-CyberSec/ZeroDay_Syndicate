@@ -68,7 +68,7 @@ body {
 
 /* Header Ends */
 
-/* Main Starts */
+/* Main Starts */s
 #main_content{
     margin: 0;
     padding: 0;
@@ -287,7 +287,7 @@ body {
 }
 .feature_img{
   display: flex;
-  width: 60px;
+  width: 20%;
   height: auto;
   align-items: center;
   justify-content: center;
