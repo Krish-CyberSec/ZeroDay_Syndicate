@@ -2,10 +2,10 @@
 {% endblock %} 
 {% block content %}
 
-<div class="container-fluid " id="main_content">
+<div class="container-fluid p-0" id="main_content">
 
   {% comment %} banner created{% endcomment %}
-  <div class="row banner_area">
+  <div class="row banner_area w-100">
     <div
       class="col-lg-6 col-md-12 col-sm-12 banner_area-c pt-lg-4"
       id="banner_area-c1"
@@ -48,9 +48,9 @@
 
 
       <section id="b_c2-img">
-        <div class="row g-3 justify-content-center">
+        <div class="row g-3 justify-content-evenly">
           <div
-            class="b_c2-img-c col-6 col-md-4 col-lg-6 me-5"
+            class="b_c2-img-c col-6 col-md-4 col-lg-6 "
             id="b_c2-img-c1"
           ></div>
           <div
@@ -58,7 +58,7 @@
             id="b_c2-img-c2"
           ></div>
           <div
-            class="b_c2-img-c col-6 col-md-4 col-lg-6 me-5 "
+            class="b_c2-img-c col-6 col-md-4 col-lg-6  "
             id="b_c2-img-c3"
           ></div>
           <div
@@ -82,8 +82,7 @@
 
   {% comment %} Adding feature tab{% endcomment %}
   <section class="py-5 my-5 back">
-        <div class="container">
-            <div class="row text-center g-4">
+        <div class="row text-center g-4 w-100">
                 <div class="col-md-4">
                     <div class="p-4 h-100">
                         <div class="icon-box mb-3">
@@ -120,9 +119,9 @@
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
-</div>
+
+  </div>
 
 {% endblock %} {% block footer %} {% endblock %}

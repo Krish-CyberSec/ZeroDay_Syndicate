@@ -18,6 +18,35 @@ body {
     padding-left: 1.5rem;
   }
 }
+
+@media (max-width: 768px){
+    .b_c2-img-c {
+        width:20% !important;
+        margin-top: 5% !important;
+
+    }
+    #b_c2-img_cir1{
+            top: 8px !important;
+            left: 20px !important;
+            width: 14% !important;
+    }
+    #b_c2-img_cir4{
+            bottom: -16px !important;
+            right: 8px !important;
+            width: 6% !important;
+    }
+    
+    #banner_area-c1 > #b_a-c1_s1 > h4 {
+        font-size: 40px !important;
+
+    }
+    
+    #banner_area-c1 > #b_a-c1_s3 a:nth-child(1) button,#banner_area-c1 > #b_a-c1_s3 a:nth-child(2) button {
+        padding: 12px 12px !important;
+        width: 150px !important;
+        margin-top: 15px !important;
+    } 
+}
 /* Media Query Ends */
 
 /* Header starts*/
@@ -69,17 +98,14 @@ body {
 /* Header Ends */
 
 /* Main Starts */s
-#main_content{
-    margin: 0;
-    padding: 0;
-}
+
 .banner_area{
     margin-top: 9vh;
 
 }
 .banner_area-c{
     height: fit-content;
-
+    width: 100% !important;
 }
 
 
