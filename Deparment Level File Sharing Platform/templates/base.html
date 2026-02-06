@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     />
     {% block css %}
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}?v=2" />
     {% endblock %}
   </head>
   <body>
@@ -21,10 +21,33 @@
     {% include "partials/navbar.html" %}
     {% comment %} Main Body area {% endcomment %}
     <main>
+    {% comment %} Loader Code Start {% endcomment %}
+    <div class="loader-overlay">
+    <div class="loader-wrap">
+      <div class="logo">
+        <span class="acad">Acad</span><span class="secure">Secure</span>
+      </div>
+      <div class="bar"></div>
+    </div>
+  </div>
+
+
+
+  <script>
+    // Simulate slow loading (3 seconds)
+    window.addEventListener("load", () => {
+      //setTimeout(() => {
+       // document.body.classList.add("loaded");
+     // }, 3000);
+        document.body.classList.add("loaded");
+
+    });
+  </script>
+    {% comment %} Loader Code Ends {% endcomment %}
+
     {% block content %}     
     {% endblock %}
     </main>
-
     {% comment %} Footer area {% endcomment %}
     
     <footer>

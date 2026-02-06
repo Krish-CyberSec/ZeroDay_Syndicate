@@ -11,6 +11,97 @@ body {
   overflow-x: hidden;
 
 }
+/* Loader Css Starts */
+.page-content {
+      min-height: 100vh;
+      padding: 60px;
+      filter: blur(8px);
+      transition: filter 0.6s ease;
+    }
+
+    /* ===== LOADER OVERLAY ===== */
+    .loader-overlay {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(4px);
+      z-index: 9999;
+      transition: opacity 0.6s ease;
+    }
+
+    .loader-wrap {
+      text-align: center;
+    }
+
+    /* ===== LOGO ===== */
+    .logo {
+      font-size: 48px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      animation: float 2s ease-in-out infinite;
+    }
+
+    .logo .acad {
+      color: #000;
+    }
+
+    .logo .secure {
+      color: #f4a261;
+      margin-left: 4px;
+      animation: pulse 1.4s ease-in-out infinite;
+    }
+
+    /* ===== PULSE ANIMATION ===== */
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.45; }
+    }
+
+    /* ===== FLOAT ANIMATION ===== */
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+
+    /* ===== UNDERLINE BAR ===== */
+    .bar {
+      width: 220px;
+      height: 4px;
+      background: #e0e0e0;
+      margin: 14px auto 0;
+      border-radius: 2px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .bar::after {
+      content: "";
+      position: absolute;
+      left: -50%;
+      width: 50%;
+      height: 100%;
+      background: #f4a261;
+      animation: slide 1.2s ease-in-out infinite;
+    }
+
+    @keyframes slide {
+      0% { left: -50%; }
+      100% { left: 100%; }
+    }
+
+    /* ===== LOADED STATE ===== */
+    body.loaded .page-content {
+      filter: blur(0);
+    }
+
+    body.loaded .loader-overlay {
+      opacity: 0;
+      pointer-events: none;
+    }
+/* Loader Css Ends */
 /* Media Query starts */
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav .nav-link {
@@ -97,11 +188,10 @@ body {
 
 /* Header Ends */
 
-/* Main Starts */s
+/* Main Starts */
 
 .banner_area{
-    margin-top: 9vh;
-
+    margin-top: 10vh !important;
 }
 .banner_area-c{
     height: fit-content;
