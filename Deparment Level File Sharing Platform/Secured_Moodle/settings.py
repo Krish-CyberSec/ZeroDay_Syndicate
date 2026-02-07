@@ -37,7 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'AcadSecure',
+    'accounts',
+    'pages',
+    'notes',
+    'assignments',
+    'notifications',
+    'core',
 ]
 
 MIDDLEWARE = [
