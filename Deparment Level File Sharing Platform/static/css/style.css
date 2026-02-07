@@ -449,14 +449,16 @@ body {
     width: 90%;
     margin: 0 auto;
     border:0;
-    border-bottom: 1px solid;
-    border-image: linear-gradient(90deg, #8A2BE2, #FF5F9E, #FFB347) 1;
+    border-bottom: 0.5px solid gray;
+    /* border-image: linear-gradient(90deg, #8A2BE2, #FF5F9E, #FFB347) 1; */
     display: block;
 }
 
 #username:focus, #password:focus{
     outline: none;
-    border-image: linear-gradient(90deg, #FF5F9E, #FFB347, #8A2BE2) 1;
+    border-bottom: 0.5px solid gray;
+
+    /* border-image: linear-gradient(90deg, #FF5F9E, #FFB347, #8A2BE2) 1; */
 }
 
 #login_from label[for="password"], #login_from label[for="username"]{
@@ -478,16 +480,40 @@ body {
     font-size: 14px;
 }
 #login-btn{
-    margin-top: 30px;
-    padding: 12px 20px;
-    border: none;
-    background: linear-gradient(90deg, #FF5F9E, #FFB347, #8A2BE2);
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
+   margin-top: 24px;
+    padding: 12px 18px;
     width: 100%;
-    font-weight: bolder;
+
+    border: none;
+    border-radius: 6px;
+
+    background: linear-gradient(90deg, #6a5cff, #7b6cff);
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+
+    cursor: pointer;
+
+    transition: background 0.3s ease,
+                box-shadow 0.3s ease,
+                transform 0.2s ease;
 }
+#login-btn:hover {
+    background: linear-gradient(90deg, #5a4ee8, #6b5ee8);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+#login-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+#login-btn:disabled {
+    background: #cfcfcf;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
 #cont_form-div-c2{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
