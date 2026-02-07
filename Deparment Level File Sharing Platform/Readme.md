@@ -202,3 +202,83 @@ python manage.py createsuperuser
 
 # Run server
 python manage.py runserver
+
+```
+# Project Tree
+
+```
+ZERODAY_SYNDICATE/           ← **Project Root (folder with manage.py)**
+│
+├── manage.py                ← Django management script (project-wide)
+├── db.sqlite3               ← Database file (if using SQLite)
+├── requirements.txt         ← Python dependencies list
+├── README.md                ← Project documentation
+│
+├── Secured_Moodle/          ← **Django Project** (configuration folder)
+│   ├── __init__.py
+│   ├── settings.py          ← Project settings (database, installed apps, middleware)
+│   ├── urls.py              ← Project-level URL routing
+│   ├── asgi.py              ← ASGI entry point
+│   └── wsgi.py              ← WSGI entry point
+│
+├── accounts/                ← **Django App: User accounts and authentication**
+│   ├── migrations/
+│   ├── templates/accounts/
+│   ├── static/accounts/
+│   ├── admin.py
+│   ├── apps.py              ← App config
+│   ├── models.py            ← UserProfile, roles, groups models
+│   ├── views.py
+│   ├── urls.py
+│   └── tests.py
+│
+├── pages/                   ← **Django App: Static and dashboard pages**
+│   ├── templates/pages/
+│   ├── views.py
+│   ├── urls.py
+│   └── apps.py
+│
+├── notes/                   ← **Django App: Notes upload/download functionality**
+│   ├── migrations/
+│   ├── templates/notes/
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── views.py
+│   ├── urls.py
+│   └── validators.py
+│
+├── assignments/             ← **Django App: Assignment upload, submission**
+│   ├── migrations/
+│   ├── templates/assignments/
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── views.py
+│   ├── urls.py
+│   └── validators.py
+│
+├── notifications/           ← **Django App: Notification system**
+│   ├── migrations/
+│   ├── models.py
+│   ├── views.py
+│   ├── urls.py
+│   └── utils.py
+│
+├── core/                    ← **Django App: Shared utilities and middleware**
+│   ├── utils/
+│   ├── middleware.py
+│   ├── apps.py
+│   └── __init__.py
+│
+├── templates/               ← **Global project templates (base.html, partials)**
+│   ├── base.html
+│   └── partials/
+│
+├── static/                  ← **Global static files (CSS, JS, images)**
+│
+├── media/                   ← Uploaded files storage (NOT an app or project)
+│
+└── venv/                    ← Python virtual environment (NOT an app or project)
+
+```
