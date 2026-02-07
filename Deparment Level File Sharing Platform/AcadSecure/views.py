@@ -72,12 +72,20 @@ def index(request):
 def about_us(request):
     return render(request,"about.html")
 
-def join(request):
-    return render(request,"")
+def login(request):
+    return render(request,"login.html")
 
-def json_response_example(request):
-    data = {
-        "status": "success",
-        "message": "API response"
-    }
-    return JsonResponse(data)
+def contact_us(request):
+    return render(request,"support.html")
+def forgot_password(request):
+    return render(request,"forgot_password.html")
+
+# def join(request):
+#     return render(request,"")
+
+# def json_response_example(request):
+#     data = {
+#         "status": "success",
+#         "message": "API response"
+#     }
+#     return JsonResponse(data)

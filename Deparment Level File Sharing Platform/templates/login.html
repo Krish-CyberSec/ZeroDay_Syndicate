@@ -1,0 +1,49 @@
+{% extends "base.html" %} {% load static %} {% block title %} AcadSecure - Login
+{% endblock %} {% block content %}
+<div class="container-fluid p-0">
+  <div class="cont_form-div d-flex">
+    <div class="cont_form-div-c" id="cont_form-div-c1">
+      <div id="login_from">
+        <p>Welcome back! Please login to your account.</p>
+
+        <form method="POST" action="{% url 'login' %}">
+          {% csrf_token %}
+          <div class="mb-3">
+            <label for="username" class="form-label">Student Email</label>
+          </br>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+          </br>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required  
+            />
+        </br>
+          <span>
+              <input type="checkbox" id="remember_me" name="remember_me" />
+              <label for="remember_me">Remember Me</label>
+          </span>
+          <span class="float-end">
+              <a href="{% url 'password_reset' %}" id="forgot-password-link">Forgot Password?</a>
+            </span>
+          </div>
+          <button type="submit" class="btn" id="login-btn">Login</button>
+        </form>
+      </div>
+    </div>
+    <div class="cont_form-div-c d-flex justify-content-center align-items-center" id="cont_form-div-c2">
+        <img src="{% static 'images/login.png' %}" alt="Login Image"  />
+    </div>
+  </div>
+</div>
+
+{% endblock %}

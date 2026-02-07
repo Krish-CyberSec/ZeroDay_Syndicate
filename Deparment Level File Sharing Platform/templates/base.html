@@ -12,8 +12,8 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    {% block css %}
     <link rel="stylesheet" href="{% static 'css/style.css' %}?v=2" />
+    {% block css %}
     {% endblock %}
   </head>
   <body>
@@ -48,18 +48,18 @@
     {% block content %}     
     {% endblock %}
     </main>
-    {% comment %} Footer area {% endcomment %}
+    {% comment %} Footer area Start{% endcomment %}
     
-    <footer>
-        {% comment %} {% block footer %}{% endblock %} {% endcomment %}
+    
+    
+    {% comment %} Footer area Ends{% endcomment %}
 
-        {% comment %} footer area code  {% endcomment %}
-    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
     <script src="{% static 'scripts/script.js' %}"></script>
+    {% include "partials/footer.html" %}
   </body>
 </html>

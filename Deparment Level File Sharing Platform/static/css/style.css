@@ -409,6 +409,94 @@ body {
   margin: 0 auto;
 }
 
+
+/* login page css start */
+.cont_form-div{
+    position: relative;
+    top:25vh;
+    bottom: 25vh;
+}
+.cont_form-div{
+  width: 90vw;
+  margin: 0 auto;
+}
+.cont_form-div-c{
+    width: 50%;
+    height: 500px;
+}
+#cont_form-div-c1{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+}
+#login_from{
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+    width: 90%;
+    padding:5% 5%;
+    padding-top: 20px;
+    
+}
+#login_from> p{
+    font-weight: 400;
+    font-size: 25px;
+    margin: 20px auto;
+    margin-bottom: 30px;
+        color: #333;
+    font-family: emojisans, 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', 'Apple Color Emoji', 'Android Emoji', 'EmojiSymbols';
+    font-weight: 500;
+}
+#login_from #username, #login_from #password{
+    width: 90%;
+    margin: 0 auto;
+    border:0;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(90deg, #8A2BE2, #FF5F9E, #FFB347) 1;
+    display: block;
+}
+
+#username:focus, #password:focus{
+    outline: none;
+    border-image: linear-gradient(90deg, #FF5F9E, #FFB347, #8A2BE2) 1;
+}
+
+#login_from label[for="password"], #login_from label[for="username"]{
+    font-weight: 500;
+    margin-top: 20px;
+    display: block;
+    color: gray;
+
+}
+#remember_me{
+    height: 12px;}
+#login_from label[for="remember_me"]{
+    font-size: 14px;
+    color: #333;
+}
+#forgot-password-link{
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+#login-btn{
+    margin-top: 30px;
+    padding: 12px 20px;
+    border: none;
+    background: linear-gradient(90deg, #FF5F9E, #FFB347, #8A2BE2);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bolder;
+}
+#cont_form-div-c2{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#cont_form-div-c2 img{
+    width: 100%;
+    height:auto;
+}
+/* login page css ends */
 /* Main Ends */
 
 /* Footer Starts */
