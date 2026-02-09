@@ -32,7 +32,7 @@ We build **outstanding, high-quality projects across multiple fields**, combinin
 ## 🚀 What We Build
 - Security tools and research projects  
 - Cross-domain applications with security at their core  
-- Proof-of-concepts and experimental systems  
+- Proofs-of-concept and experimental systems  
 - Automation tools and productivity software  
 - Learning platforms and technical resources  
 
