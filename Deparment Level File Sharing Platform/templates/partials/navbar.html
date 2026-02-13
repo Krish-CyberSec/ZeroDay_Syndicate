@@ -2,7 +2,7 @@
 <header>
       <nav class="navbar navbar-expand-lg fixed-top" id="nav">
         <div class="container-fluid">
-          <a class="navbar-brand" href="{% url 'home' %}">Acad<span>Secure</span></a>
+          <a class="navbar-brand" href="{% url 'pages:home' %}">Acad<span>Secure</span></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -33,12 +33,12 @@
             <div class="offcanvas-body pe-3">
               <ul class="navbar-nav justify-content-end flex-grow-1">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="{% url 'home' %}"
+                  <a class="nav-link active" aria-current="page" href="{% url 'pages:home' %}"
                     >Home</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'about' %}">About</a>
+                  <a class="nav-link" href="{% url 'pages:about' %}">About</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Donate</a>
@@ -70,7 +70,7 @@
                   </ul>
                 </li> {% endcomment %}
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Support</a>
+                  <a class="nav-link" href="{% url 'pages:support' %}">Support</a>
                 </li>
               </ul>
             </div>
